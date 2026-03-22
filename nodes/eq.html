@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equality</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="home-link">The Nodes</a>
+    </header>
+    <main>
+        <article>
+            <h1>Equality</h1>
+            <p class="meta">Date: 2025-11-22</p>
+
+<pre class="raw-node">
+"=" is an indicator function over a set of ordered pairs that checks if first and second elements are the same
+
+So for the set {1,2,3}, it is defined as  =:{1,2,3}×{1,2,3}->{0,1}
+
+= (1,2) => 0 (not equal)
+= (3,3) => 1 (equal)
+
+There are 2 types of equality.
+
+Let the set X = {a, 3, 6, v} consist of 4 keyboard symbols.
+
+The notation a = a means that a is equal to itself, i.e.,it is one and the same object.
+a = a if they cannot be distinguished by applying the same functions to them.
+
+Let a function d: X → X be such that:
+a ⇾ 6
+6 ⇾ 3
+3 ⇾ 3
+v ⇾ a
+
+Let's compute d 3:
+d 3 => 3
+That is, we can write:
+d 3 = 3 — if we evaluate the expression d 3, we get 3.
+
+d 6 = 3 — since d 6 => 3.
+
+The second type is equivalence (belonging to the same class).
+
+Let e be an indicator function e: X → {digit, letter}, defined intuitively as:
+a ⇾ letter
+6 ⇾ digit
+3 ⇾ digit
+v ⇾ letter
+
+From the function e, we can form two sets — {a, v} and {6, 3}.
+
+Example:
+e v = e a
+
+Let's compute to verify the equality:
+e v => letter
+e a => letter
+
+The diagram proves the equality. The arrows show the transformation (application of the function).
+ e v   =  e a
+  ↓        ↓
+letter = letter
+
+</pre>
+            <h2>Links</h2>
+            <ul>
+                <li><a href="product.html">Cartesian product</a></li>
+             </ul>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 The Nodes Project</p>
+    </footer>
+</body>
+</html>

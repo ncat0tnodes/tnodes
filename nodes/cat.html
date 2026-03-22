@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sets and Functions</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="home-link">The Nodes</a>
+    </header>
+    <main>
+        <article>
+            <h1>Sets and Functions</h1>
+            <p class="meta">Date: 2025-11-22</p>
+
+<pre class="raw-node">
+A set is defined by the objects that belong to it, which can include other sets. The notations {a, b, c} and {b, c, a} are considered equivalent because they define a set with exactly the same elements.
+
+There are two primary ways to define a set:
+
+    Listing its elements - {1, 2, 3}
+
+    Specifying a condition that its elements must satisfy.
+
+A function is denoted as follows:
+Name: Set ⇾ Set
+This means that the function assigns to each element from the first set (the domain) exactly one element from the second set (the codomain). This is the formal definition of a function.
+
+Let's define two sets:
+    A: {a, b, c, d}
+    B: {0, 1}
+
+Now, define a function f: A ⇾ B such that:
+    a ⇾ 1
+    b ⇾ 0
+    c ⇾ 1
+    d ⇾ 1
+
+The set A is called the domain of the function f, and the set B is called its codomain.
+
+Function Application
+Let the notation "f x" denote the application of the function f to the object x. The expressions "f c" and "1" are equivalent because f c reduces to 1 after evaluation, as f has the property of mapping c from set A to 1 in set B.
+
+Now, consider a function g: {0, 1} ⇾ {a, b, c, d}, defined as:
+    0 ⇾ a
+    1 ⇾ d
+
+Let's evaluate function g. To do this, we substitute the value and replace it according to the arrow. This process is called function application, or evaluation:
+
+We introduce the symbol '=>' to express the transition of an expression to its reduced form (evaluation).
+    g 0 => a
+    g 1 => d
+
+Function Composition
+
+Function composition is the construction of a function whose evaluation consists of applying one function to the result of another function.
+
+Composition is only possible if the codomain of the first function is the domain of the second function.
+
+In our case:
+    f: {a, b, c, d} ⇾ {0, 1} has codomain {0, 1}
+    g: {0, 1} ⇾ {a, b, c, d} has domain {0, 1}
+
+Therefore, the composition of f and g is valid.
+
+Evaluating a Composition
+The notation g f b means we first compute f b and then substitute the result into the function g. In other words, evaluation proceeds from right to left.
+
+Let's compute g f b:
+    f b ⇾ 0
+    Substitute 0 into g:
+    g 0 ⇾ a
+
+The result is a sequential transformation: b ⇾ 0 ⇾ a, or simply b ⇾ a.
+
+Let's compute f g 0:
+    g 0 ⇾ a
+    Substitute a into f: f a ⇾ 1
+
+Evaluation of f g 0:
+"f g 0" => "f a" => "1"
+
+</pre>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 The Nodes Project</p>
+    </footer>
+</body>
+</html>

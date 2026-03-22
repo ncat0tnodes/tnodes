@@ -1,0 +1,78 @@
+/* Сброс базовых стилей и настройка шрифтов */
+body {
+    background-color: #1a1a1a; /* Чуть мягче, чем чисто черный */
+    color: #e0e0e0;          /* Чуть мягче, чем чисто белый/зеленый */
+    font-family: 'Courier New', Courier, monospace; /* Классический моноширинный */
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;        /* Ограничиваем ширину для читаемости */
+    padding: 2em;
+}
+
+article {
+    max-width: 100%;
+    overflow-x: hidden; /* Предотвращает выход за границы */
+}
+
+main, footer {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+a {
+    color: #00ff99;          /* Мятно-зеленый */
+    text-decoration: none;
+    border-bottom: 1px dashed #00ff99;
+}
+a:hover {
+    color: #ffffff;
+    background-color: #00ff99;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #ffff00; /* Желтый, как в вашем старом файле */
+    border-bottom: 2px solid #555;
+    padding-bottom: 0.2em;
+}
+
+/* Мета-информация (дата, и т.д.) */
+.meta {
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Код */
+code {
+    background-color: #333;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+pre {
+    background-color: #2a2a2a;
+    padding: 1em;
+    overflow-x: scroll; /* Горизонтальная прокрутка для длинного кода */
+}
+
+.raw-node {
+    white-space: pre-wrap;       /* Сохраняет пробелы, но переносит длинные строки */
+    word-wrap: break-word;       /* Ломает слова, если они не влезают */
+    font-family: "Consolas", "Monaco", "Courier New", monospace;
+    overflow-wrap: anywhere;     /* жёсткий перенос при необходимости */
+    word-break: break-word;
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 3px solid #00ff99;
+}
+
+/* Навигационная ссылка на главную */
+.home-link {
+    font-weight: bold;
+    border: none;
+}

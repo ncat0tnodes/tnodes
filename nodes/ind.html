@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indicator function</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="home-link">The Nodes</a>
+    </header>
+    <main>
+        <article>
+            <h1>Indicator function</h1>
+            <p class="meta">Date: 2025-11-30</p>
+<pre class="raw-node">
+Let f: {a,b,c,d} → {0,1} be a function such that it maps:
+a → 1
+b → 0
+c → 0
+d → 1
+
+f is a 2-valued function (it maps to a set of 2 values). Such a function is called a condition, or predicate.
+Conventionally, the value 1 indicates that the condition is satisfied (True), and 0 indicates it is not (False).
+
+The notation {variable | condition} defines a set containing only the elements for which the condition is satisfied.
+
+Let's define a new set using f:
+{x | f x} 
+This expression is equivalent to the set {a,d}, because f is satisfied only for a and d (as f a and f d evaluate to 1).
+
+</pre>
+
+            <h2>Links</h2>
+            <ul>
+                <li><a href="var.html">Variables and Constraints</a></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 The Nodes Project</p>
+    </footer>
+</body>
+</html>
